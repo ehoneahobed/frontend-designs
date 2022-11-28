@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* variables for colors */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --paragraph-white: hsla(0, 0%, 100%, 0.75);
+    --stat-headings-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Inter, "Lexend Deca", sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    color: var(--white)
+}
+
+/* ************************* MAIN SECTION ************************** */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto;
+    width: 70%;
+    height: 54vh;
+}
+
+.left-side {
+    background-color: var(--dark-desaturated-blue);
+    flex: 1 1 4rem;
+    height: 100%;
+}
+
+.right-side {
+    flex: 1 1 4rem;
+}
+
+.inside-left {
+    width: 80%;
+    margin: 4rem auto;
+    height: 100%;
+}
+
+.inside-left h2 {
+    font-size: 2.3rem;
+}
+
+.inside-left h2 .insight {
+    color: var(--soft-violet);
+}
+
+.inside-left p {
+    color: var(--paragraph-white);
+    width: 80%;
+    margin: 2rem 0 5rem 0;
+}
+
+.inside-left .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+
+.inside-left .stats h3 {
+    font-size: 1.3rem;
+}
+
+.inside-left .stats h3 span {
+    text-transform: uppercase;
+}
+
+.inside-left .stats p {
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+}
+
+.right-side .img {
+    /* background: linear-gradient(to top, rgba(101, 37, 141, 0.5), rgba(170, 92, 219, 0.5)), url("./images/image-header-desktop.jpg") 0 0 no-repeat; */
+    background-color: var(--soft-violet);
+    height: 54vh;
+    overflow: hidden;
+}
+
+.right-side img {
+    opacity: 0.35;
+    width: 100%;
+    height: 100%;
+}
+
+/************************* MEDIA QUERIES **************  */
+@media screen and (max-width: 720px) {
+    .main-section {
+        flex-direction: column-reverse;
+        margin: 16rem auto;
+        width: 85%;
+    }
+
+    .right-side {
+        border: 2px solid;
+        border-radius: 0.4rem 0.4rem 0 0;
+    }
+}
