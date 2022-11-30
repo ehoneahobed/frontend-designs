@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%); 
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree';
+}
+
+p {
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/bg-header-desktop.png');
+    background-size: cover;
+}
+
+.container {
+    margin: 2rem auto 4rem auto;
+    width: 70%;
+    max-width: 1440px;
+    /* overflow: hidden; */
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.hero-logo img {
+    width: 70%;
+}
+
+.hero-heading {
+    font-size: 3rem;
+    color: var(--dark-grayish-blue);
+}
+
+.hero-paragraph {
+    font-size: 1.4rem;
+    color: var(--grayish-blue);
+    width: 70%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-buttons button {
+    padding: 1rem 2.5rem;
+    /* width: 80%; */
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    box-shadow: -3px 4px 6px -2px #222;
+}
+
+.btn-ios {
+    background-color: var(--strong-cyan);
+    color: white;
+}
+
+.btn-mac {
+    background-color: var(--light-blue);
+    color: white;
+}
+
+/* ********************* SECTION ONE ********************* */
+.section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-one .heading {
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+}
+
+.section-one-paragraph {
+    font-size: 1.25rem;
+    color: var(--grayish-blue);
+    width: 70%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.section-one article {
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.section-one-left {
+    flex: 1 1 2rem;
+}
+.section-one-right {
+    flex: 1 1 7rem;
+    overflow: hidden;
+    margin-left: 6rem;
+}
+
+.section-one-right h3 {
+    color: var(--dark-grayish-blue);
+    padding-bottom: 0.8rem;
+}
+
+.section-one-right p {
+    padding-bottom: 4rem;
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+}
+
+
+.section-one-left img {
+    position: absolute;
+    margin-left: -295px;
+    margin-top: -300px;
+}
+
+/* ****************** SECTION TWO ************** */
+.section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.section-two .heading {
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+}
+
+.section-two-paragraph {
+    font-size: 1.25rem;
+    color: var(--grayish-blue);
+    width: 70%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.section-two-img {
+    padding-top: 2.5rem;
+    /* padding-bottom: 2.5rem; */
+}
+
+
+/* ******** SECTION THREE ***************** */
+.section-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+    padding-bottom: 6rem;
+    /* width: 100%; */
+}
+
+.section-three .heading {
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+}
+
+.section-three-paragraph {
+    font-size: 1.0rem;
+    color: var(--grayish-blue);
+    width: 70%;
+    text-align: center;
+    padding-top: 0.8rem;
+    padding-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.section-three .section-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10rem;
+    width: 100%;
+}
+
+.section-actions h3 {
+    color: var(--dark-grayish-blue);
+    font-size: 20px;
+}
+
+.section-actions p {
+    color: var(--grayish-blue);
+    padding-top: 1rem;
+}
+
+.action-1::before {
+    content: url('./images/icon-blacklist.svg');
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.action-2::before {
+    content: url('./images/icon-text.svg');
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.action-3::before {
+    content: url('./images/icon-preview.svg');
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.section-three .section-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* *************** SECTION FOUR **************** */
+.section-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+    /* width: 100%; */
+    padding-bottom: 4rem;
+}
+
+.section-four .heading {
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+}
+
+.section-four-paragraph {
+    font-size: 1.0rem;
+    color: var(--grayish-blue);
+    width: 70%;
+    text-align: center;
+    padding-top: 0.8rem;
+    padding-bottom: 3rem;
+    line-height: 1.5;
+}
+
+
+/* **************** FOOTER ******************** */
+
+.footer-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: hsla(201, 11%, 66%, 0.1);
+    margin-top: 2rem;
+}
+
+.footer-section article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 25%;
+}
+
+.footer-section ul li {
+    font-size: 1.0rem;
+    padding-bottom: 0.7rem;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 3rem
+}
+
+.footer-section div {
+    flex: 1 1 2rem;
+}
